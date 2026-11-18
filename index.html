@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MultiPlay Engine — Tabuleiro de Três</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">PYTHON · WEBSOCKETS · MULTIPLAYER</p>
+      <h1>MultiPlay <span>Engine</span></h1>
+      <p class="subtitle">Um protótipo de jogo em tempo real para até três jogadores.</p>
+    </header>
+
+    <section id="lobby" class="panel">
+      <h2>Entrar em uma partida</h2>
+      <label for="playerName">Seu nome</label>
+      <input id="playerName" maxlength="18" placeholder="Ex.: Alex" value="Jogador">
+      <div class="actions">
+        <button id="createBtn">Criar sala</button>
+      </div>
+      <div class="join-row">
+        <input id="roomCode" maxlength="5" placeholder="CÓDIGO DA SALA" autocomplete="off">
+        <button id="joinBtn" class="secondary">Entrar</button>
+      </div>
+      <p class="hint">Compartilhe o código da sala com até outras duas pessoas.</p>
+    </section>
+
+    <section id="game" class="panel hidden">
+      <div class="room-heading">
+        <div><p class="eyebrow">SALA</p><h2 id="roomLabel">-----</h2></div>
+        <button id="copyBtn" class="secondary small">Copiar código</button>
+      </div>
+      <div id="connection" class="status">Conectando ao servidor…</div>
+      <h3>Jogadores</h3>
+      <div id="players" class="players"></div>
+      <div id="turnInfo" class="turn-info">Aguardando jogadores…</div>
+      <div id="board" class="board" aria-label="Tabuleiro do jogo"></div>
+      <div class="actions">
+        <button id="resetBtn" class="secondary">Reiniciar partida</button>
+        <button id="leaveBtn" class="danger">Sair da sala</button>
+      </div>
+      <p class="hint">As jogadas são validadas pelo servidor e enviadas aos jogadores conectados.</p>
+    </section>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <footer>Protótipo educacional · As salas ficam na memória do servidor.</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
