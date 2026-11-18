@@ -1,0 +1,260 @@
+PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> cd "$HOME\Downloads\projetofinalr3des-main\projetofinalr3des-main"
+PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> Get-Location
+
+Path
+----
+C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main
+
+PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> ..\ .venv\Scripts\Activate.ps1
+..\: The term '..\' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> ..\ .venv\Scripts\Activate.ps1
+..\: The term '..\' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> & "..\.venv\Scripts\Activate.ps1"
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> python -m pip install -r requirements.txt
+Requirement already satisfied: fastapi<1.0,>=0.115 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from -r requirements.txt (line 1)) (0.163.2)
+Requirement already satisfied: uvicorn<1.0,>=0.30 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (0.54.0)
+Requirement already satisfied: pytest<9.0,>=8.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from -r requirements.txt (line 3)) (8.4.2)
+Requirement already satisfied: httpx<1.0,>=0.27 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from -r requirements.txt (line 4)) (0.28.1)
+Requirement already satisfied: starlette>=0.46.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (1.10.0)
+Requirement already satisfied: anyio>=4.1.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (4.16.0)
+Requirement already satisfied: pydantic>=2.9.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (2.14.3)
+Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (4.16.0)
+Requirement already satisfied: typing-inspection>=0.4.2 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (0.4.5)
+Requirement already satisfied: annotated-doc>=0.0.2 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (0.0.7)
+Requirement already satisfied: opentelemetry-api>=1.44.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (1.45.2)
+Requirement already satisfied: click>=7.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn<1.0,>=0.30->uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (8.5.1)
+Requirement already satisfied: h11>=0.8 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn<1.0,>=0.30->uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (0.16.0)
+Requirement already satisfied: colorama>=0.4 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from pytest<9.0,>=8.0->-r requirements.txt (line 3)) (0.4.6)
+Requirement already satisfied: iniconfig>=1 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from pytest<9.0,>=8.0->-r requirements.txt (line 3)) (2.3.1)
+Requirement already satisfied: packaging>=20 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from pytest<9.0,>=8.0->-r requirements.txt (line 3)) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from pytest<9.0,>=8.0->-r requirements.txt (line 3)) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from pytest<9.0,>=8.0->-r requirements.txt (line 3)) (2.21.0)
+Requirement already satisfied: certifi in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from httpx<1.0,>=0.27->-r requirements.txt (line 4)) (2026.10.23)
+Requirement already satisfied: httpcore==1.* in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from httpx<1.0,>=0.27->-r requirements.txt (line 4)) (1.0.9)
+Requirement already satisfied: idna in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from httpx<1.0,>=0.27->-r requirements.txt (line 4)) (3.20)
+Requirement already satisfied: httptools>=0.8.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (0.9.0)
+Requirement already satisfied: python-dotenv>=0.13 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (1.2.4)
+Requirement already satisfied: pyyaml>=5.1 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (6.0.3)
+Requirement already satisfied: watchfiles>=0.20 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (1.3.0)
+Requirement already satisfied: websockets>=13.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from uvicorn[standard]<1.0,>=0.30->-r requirements.txt (line 2)) (17.4)
+Requirement already satisfied: annotated-types>=0.6.0 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from pydantic>=2.9.0->fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (0.8.0)
+Requirement already satisfied: pydantic-core==2.50.4 in c:\users\2025302210\downloads\projetofinalr3des-main\.venv\lib\site-packages (from pydantic>=2.9.0->fastapi<1.0,>=0.115->-r requirements.txt (line 1)) (2.50.4)
+
+[notice] A new release of pip is available: 24.2 -> 26.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> Get-Item .\static | Format-List Name,Mode,Length,FullName
+
+Name     : static
+Mode     : -a---
+Length   : 0
+FullName : C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main\static
+
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> Remove-Item .\static -Force
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> New-Item -ItemType Directory -Path .\static
+
+    Directory: C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          18/11/2026    09:52                static
+
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> Copy-Item .\index.html .\static\index.html
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> Copy-Item .\style.css .\static\style.css
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> Get-ChildItem .\static
+
+    Directory: C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main\static
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          18/11/2026    09:41           2168 index.html
+-a---          18/11/2026    09:41           3696 style.css
+
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> Get-Content .\main.py
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
+import asyncio
+import secrets
+import string
+
+BASE_DIR = Path(__file__).parent
+rooms = {}
+rooms_lock = asyncio.Lock()
+MAX_PLAYERS = 3
+SYMBOLS = ["A", "B", "C"]
+WIN_LINES = [
+    (0, 1, 2), (3, 4, 5), (6, 7, 8),
+    (0, 3, 6), (1, 4, 7), (2, 5, 8),
+    (0, 4, 8), (2, 4, 6),
+]
+
+class Room:
+    def __init__(self, code):
+        self.code = code
+        self.players = {}  # player_id -> {name, symbol, websocket}
+        self.board = [""] * 9
+        self.turn = 0
+        self.winner = None
+        self.lock = asyncio.Lock()
+
+    def public_state(self):
+        return {
+            "type": "state",
+            "room": self.code,
+            "players": [
+                {"id": pid, "name": p["name"], "symbol": p["symbol"]}
+                for pid, p in self.players.items()
+            ],
+            "board": self.board,
+            "turn": self.turn,
+            "current_symbol": (list(p["symbol"] for p in self.players.values())[self.turn % len(self.players)] if self.players else SYMBOLS[0]),
+            "winner": self.winner,
+            "max_players": MAX_PLAYERS,
+        }
+
+def make_code():
+    alphabet = string.ascii_uppercase + string.digits
+    return "".join(secrets.choice(alphabet) for _ in range(5))
+
+async def broadcast(room):
+    state = room.public_state()
+    stale = []
+    for pid, player in list(room.players.items()):
+        ws = player.get("websocket")
+        if ws:
+            try:
+                await ws.send_json(state)
+            except Exception:
+                stale.append(pid)
+    for pid in stale:
+        room.players.pop(pid, None)
+
+app = FastAPI(title="MultiPlay Engine", version="0.1.0")
+app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
+
+@app.get("/")
+async def index():
+    return FileResponse(BASE_DIR / "static" / "index.html")
+
+@app.get("/health")
+async def health():
+    return {"status": "ok", "rooms": len(rooms)}
+
+@app.post("/api/rooms")
+async def create_room():
+    async with rooms_lock:
+        code = make_code()
+        while code in rooms:
+            code = make_code()
+        rooms[code] = Room(code)
+    return {"room": code, "max_players": MAX_PLAYERS}
+
+@app.get("/api/rooms/{code}")
+async def room_info(code: str):
+    room = rooms.get(code.upper())
+    if not room:
+        raise HTTPException(status_code=404, detail="Sala não encontrada.")
+    return {
+        "room": room.code,
+        "players": len(room.players),
+        "max_players": MAX_PLAYERS,
+        "started": len(room.players) > 0,
+    }
+
+@app.websocket("/ws/{code}")
+async def room_socket(websocket: WebSocket, code: str, name: str = "Jogador"):
+    code = code.upper()
+    await websocket.accept()
+    room = rooms.get(code)
+    if room is None:
+        await websocket.send_json({"type": "error", "message": "Sala não encontrada."})
+        await websocket.close(code=1008)
+        return
+
+    player_id = secrets.token_urlsafe(8)
+    safe_name = " ".join(name.strip().split())[:18] or "Jogador"
+
+    async with room.lock:
+        if len(room.players) >= MAX_PLAYERS:
+            await websocket.send_json({"type": "error", "message": "A sala já está cheia (máximo de 3 jogadores)."})
+            await websocket.close(code=1008)
+            return
+        symbol = SYMBOLS[len(room.players)]
+        room.players[player_id] = {
+            "name": safe_name,
+            "symbol": symbol,
+            "websocket": websocket,
+        }
+        await broadcast(room)
+
+    try:
+        while True:
+            message = await websocket.receive_json()
+            action = message.get("action")
+            async with room.lock:
+                if player_id not in room.players:
+                    break
+                player = room.players[player_id]
+
+                if action == "move":
+                    index = message.get("index")
+                    if room.winner:
+                        await websocket.send_json({"type": "notice", "message": "A partida terminou. Reinicie para jogar novamente."})
+                        continue
+                    if not isinstance(index, int) or isinstance(index, bool) or index < 0 or index >= 9:
+                        await websocket.send_json({"type": "notice", "message": "Posição inválida."})
+                        continue
+                    active_symbols = [p["symbol"] for p in room.players.values()]
+                    expected_symbol = active_symbols[room.turn % len(active_symbols)]
+                    if player["symbol"] != expected_symbol:
+                        await websocket.send_json({"type": "notice", "message": "Ainda não é a sua vez."})
+                        continue
+                    if room.board[index]:
+                        await websocket.send_json({"type": "notice", "message": "Essa casa já está ocupada."})
+                        continue
+
+                    room.board[index] = player["symbol"]
+                    if any(all(room.board[i] == player["symbol"] for i in line) for line in WIN_LINES):
+                        room.winner = {"symbol": player["symbol"], "name": player["name"]}
+                    elif all(room.board):
+                        room.winner = {"symbol": None, "name": "Empate"}
+                    else:
+                        active_symbols = [p["symbol"] for p in room.players.values()]
+                        room.turn = (room.turn + 1) % len(active_symbols)
+                    await broadcast(room)
+
+                elif action == "reset":
+                    # Any connected player can request a new round.
+                    room.board = [""] * 9
+                    room.turn = 0
+                    room.winner = None
+                    await broadcast(room)
+
+                else:
+                    await websocket.send_json({"type": "notice", "message": "Ação desconhecida."})
+    except WebSocketDisconnect:
+        pass
+    except Exception:
+        pass
+    finally:
+        async with room.lock:
+            room.players.pop(player_id, None)
+            if not room.players:
+                rooms.pop(code, None)
+            else:
+                await broadcast(room)
+(.venv) PS C:\Users\2025302210\Downloads\projetofinalr3des-main\projetofinalr3des-main> python -m uvicorn main:app --reload
+INFO:     Will watch for changes in these directories: ['C:\\Users\\2025302210\\Downloads\\projetofinalr3des-main\\projetofinalr3des-main']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [11268] using WatchFiles
+INFO:     Started server process [17268]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52238 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52238 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60303 - "GET /static/app.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52238 - "GET /favicon.ico HTTP/1.1" 404 Not Found
